@@ -1,0 +1,28 @@
+html {
+    font-size: 62.5%; 
+}
+
+.container{
+    width:90%;
+    margin-left:5%;
+    border:1px solid red;
+    display:flex;
+    margin-top:8rem;
+}
+
+.left-container{
+    border:2px solid orange;
+    width:50%;
+}
+
+.left-container .title-container{
+    border:2px solid violet;
+}
+
+.left-container .context-container{
+    border:2px solid blue;
+}
+
+.left-container .image-container{
+    border:2px solid slateblue;
+}
