@@ -1,5 +1,57 @@
+@font-face {
+    font-family: 'HK Grotesk Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Regular'), url('../fonts/HKGrotesk-Regular.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'HK Grotesk Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Light'), url('../fonts/fonts/HKGrotesk-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HK Grotesk Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Medium'), url('../fonts/fonts/HKGrotesk-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Medium'), url('../fonts/fonts/HKGrotesk-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk Medium Legacy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Medium Legacy'), url('../fonts/HKGrotesk-MediumLegacy.otf') format('woff');
+    }
+
+@font-face {
+    font-family: 'HK Grotesk SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk SemiBold'), url('../fonts/HKGrotesk-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Bold'), url('../fonts/HKGrotesk-Bold.woff') format('woff');
+}
+
+
+
 *{
-    font-family: 'HK Grotesk';
+    font-family: 'HK Grotesk Regular';
     color:#2D3047;
 }
 html {
@@ -11,8 +63,25 @@ html {
     height: 85vh;
     /* border:1px solid red; */
     display:flex;
-    margin-top:6rem;
+    margin-top:4rem;
     justify-content: space-between;
+}
+
+.links{
+    width:95%;
+    margin-top:2rem;
+    border:2px solid rosybrown;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.links a {
+    padding-right:1em;
+    font-size: 1.2rem;
+}
+
+.links b {
+    color:#B5BEC5;
 }
 
 .left-container{
@@ -39,7 +108,6 @@ html {
 
 .left-container .title-container h2{
     margin:0;
-    font-weight: 400;
 }
 
 .left-container .context-container{
@@ -163,7 +231,8 @@ html {
 
 a{
     text-decoration: none;
-    font-weight: 700;
+    font-family: "HK Grotesk SemiBold";
+
 }
 
 
@@ -254,6 +323,10 @@ a{
       .left-container::after {
       display:none;
       }
+
+      .mini-footer{
+        display:none;
+    }
   }
   
   /* 
@@ -308,6 +381,10 @@ a{
       .left-container::after {
       display:none;
       }
+
+      .mini-footer{
+        display:none;
+    }
   }
   /* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -361,6 +438,10 @@ a{
       .left-container::after {
       display:none;
       }
+
+      .mini-footer{
+        display:none;
+    }
   }
   
   /* 
