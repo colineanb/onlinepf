@@ -7,6 +7,13 @@
 
 
 @font-face {
+    font-family: 'HK Grotesk Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Italic'), url('../fonts/HKGrotesk-Italic.woff') format('woff');
+}
+
+@font-face {
     font-family: 'HK Grotesk Light';
     font-style: normal;
     font-weight: normal;
@@ -18,6 +25,14 @@
     font-style: normal;
     font-weight: normal;
     src: local('HK Grotesk Medium'), url('../fonts/fonts/HKGrotesk-Medium.woff') format('woff');
+    src: local('HK Grotesk Light'), url('../fonts/fonts/HKGrotesk-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Light Italic'), url('../fonts/fonts/HKGrotesk-LightItalic.woff') format('woff');
 }
 
 @font-face {
@@ -33,12 +48,18 @@
     font-weight: normal;
     src: local('HK Grotesk Medium Legacy'), url('../fonts/HKGrotesk-MediumLegacy.otf') format('woff');
     }
-
 @font-face {
     font-family: 'HK Grotesk SemiBold';
     font-style: normal;
     font-weight: normal;
     src: local('HK Grotesk SemiBold'), url('../fonts/HKGrotesk-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HK Grotesk SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk SemiBold Italic'), url('../fonts/HKGrotesk-SemiBoldItalic.woff') format('woff');
 }
 
 @font-face {
@@ -48,6 +69,12 @@
     src: local('HK Grotesk Bold'), url('../fonts/HKGrotesk-Bold.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'HK Grotesk Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('HK Grotesk Bold Italic'), url('../fonts/HKGrotesk-BoldItalic.woff') format('woff');
+}
 
 
 *{
@@ -55,7 +82,7 @@
     color:#2D3047;
 }
 html {
-    font-size: 62.5%; 
+    font-size: 60.5%; 
 }
 
 .container{
@@ -100,13 +127,14 @@ html {
 }
 
 .left-container .title-container h1{
-    font-weight: 400;
+    font-family: 'HK Grotesk';
     font-size: 2.5rem;
     margin:1rem;
     margin-left:0;
 }
 
 .left-container .title-container h2{
+    font-family: 'HK Grotesk';
     margin:0;
 }
 
@@ -421,6 +449,7 @@ a{
         flex-direction: column;
         justify-content: center;
         margin-left:10%;
+        margin-top:50%;
     }
 
     .left-container .image-container{
@@ -443,6 +472,10 @@ a{
         display:none;
     }
   }
+
+  .mini-footer{
+    display:none;
+}
   
   /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -478,6 +511,7 @@ a{
         flex-direction: column;
         justify-content: center;
         margin-left:10%;
+        margin-top:50%;
     }
 
     .left-container .image-container{
